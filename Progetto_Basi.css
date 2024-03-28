@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gochi+Hand&family=Monoton&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+	background-color: rgb(243, 250, 239);
+  margin: 0;
+  padding: 0;
+}
+#font1{
+  background-color: red;
+}
+#ErroreLog {
+  color: red;
+  margin-bottom: 2em;
+}
+#errImg {
+  width: 500px;
+  margin-left: 25%;
+  margin-right: auto;
+  margin-bottom: 4em;
+
+}
+#tendenza {
+	font-size: 320%;
+	text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(212, 72, 76);  
+  z-index: 2;
+  position: fixed; 
+  top: 0; 
+  width: 80%;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  font-family: Baskerville;
+}
+#btn-cancella, #confermaBl, #confermaUt {
+  margin-bottom: 2em;
+  color: white;
+  background-color: rgb(212, 72, 76);  
+}
+#confermaUt a:hover, #confermaBl a:hover {
+  color: white;
+} 
+#modifica {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#usercheck {
+  display: none;
+  background-color: white;
+  z-index: 1;
+  width: 30%;
+  height: 17em;
+  overflow: scroll;
+  position: fixed;
+  right: 10%;
+  top: 7.5%;
+  text-align: center;
+  border: 2px solid rgb(212, 72, 76);  
+  font-family: Baskerville;
+}
+#usercheck a {
+  color: black;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Baskerville;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: rgb(81, 122, 154);
+	color: white;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: rgb(81, 122, 154);
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+/*Bacheca coi dati del profilo*/
+#bacheca {
+  border: 1px solid;
+  margin-top: 7em;
+  text-align: center;
+}
+#bacheca img {
+  width: 12em; 
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.5em; 
+  margin-top: 3em;
+  display: block;
+}
+#bachecaP {
+  border: 1px solid rgb(212, 72, 76);
+  margin-top: 7em;
+  text-align: center;
+}
+#bachecaP img {
+  width: 12em; 
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.5em; 
+  margin-top: 3em;
+  display: block;
+}
+#moderatore {
+  display: inline-block;
+}
+#nickname {
+  display: inline-block;
+}
+/*barra di ricerca*/
+#searchPr, #searchBlog, #searchTema {
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 2em;
+}
+/*pulsante modifica*/
+.btn-modifica {
+  margin-bottom: 2em;
+}
+#MieiBlog {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-family: Baskerville;
+}
+/*contenitore per creare i post*/
+#contenitoreCreaPost article{
+  border: 1px solid;
+  padding: 3em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+#contenitoreCreaPost input[type=file]{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+#contenitoreCreaPost button{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contenitoreCreaPost h2 {
+  text-align: center;
+}
+#titoloPost, #testoPost {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#testoPost {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  resize: none;
+}
+#welcome {
+  padding-top: 1em;
+  text-align: center;
+  font-size: 5.5em;
+  font-family: Baskerville;
+}
+#FormScelta{
+  float: right;
+  font-family: Baskerville;
+  
+}
+.risultatiHome{
+  font-family: Baskerville;
+  padding-top: 2.5em;
+  padding-bottom: 2em;
+
+}
+.Posts {
+	padding-top: 1em;
+  border: 1px solid rgb(212, 72, 76);
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+  min-height: 20em;
+ width: 60em;
+margin-top: 2em;
+ margin-right: auto;
+ margin-left: auto;
+}
+.titoloPost{
+  font-family: Baskerville;
+  font-size: 2.5em;
+  margin-left: 4em;
+
+}
+.testoPost, .AutorePost{
+  font-family: Baskerville;
+  font-size: 1.5em;
+  margin-left: 6.70em;
+  width: 15em;
+
+}
+.immaginiDeiPost{
+  max-height: 18em;
+  max-width: 20em;
+  float: right;
+  margin-right: 6em;
+ 
+  
+}
+.Piace, .PiaceNON, .piaciuto, .NONpiaciuto {
+  margin-left: 10em;
+  cursor: pointer;
+  width: 3em;
+}
+.numeroLike{
+  margin-left: 11em;
+}
+.InserisciCommento{
+  font-family: Baskerville;
+  color: black;
+  margin-left: 10em;
+}
+.stampaCommenti{
+  margin-left: 10em;
+  font-family: Baskerville;
+  padding-bottom: 0.5em;
+  display: block;
+
+}
+.stampaCommentiTesto{
+  margin-left: 12em;
+  font-family: Baskerville;
+  width: 15em;
+  display: inline-block;
+
+
+}
+.eliminaCommento {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  display: inline-block;
+  cursor: pointer;
+}
+.eliminaPost {
+  margin-left: 10.7em;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+.contenitoreBlog{
+  
+  border: 1px solid rgb(81, 122, 154);
+
+  display: inline-grid;
+  padding: 0;
+   padding: 20px;
+  
+  text-align: center;
+  margin-bottom: 7em;
+
+
+
+}
+#nomeBlog, #temaBlog {
+  width: 60%;
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
+}
+#nomeBlog {
+  margin-top: 3em;
+}
+#bacheca input[type=file]{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3em;
+}
+.btn-crea {
+  margin-bottom: 3em;
+  width: 20%;
+  padding: 1em;
+  font-size: 90%;
+}
+#MaxBlog {
+  margin-bottom: 2em;
+}
+.contenitoreBlogGrande{
+ grid-gap: 50px 50px;
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+  padding: 10px;
+
+}
+.titoloBlog{
+  font-family: Baskerville;
+  text-align: center;
+  font-size: 2em;
+}
+.autoreBlog, .temaBlog{
+   font-family: Baskerville;
+   font-size: 1em;
+   text-align: center;
+
+}
+.immagineDelBlog{
+  max-width: 14em;
+  max-height: 10em;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.segui, .seguiNON{
+	padding: 0.2em;
+
+}
+.Nascondi {
+  background-color: white;
+  color: black;
+  width: 50em;
+  height: 40em;
+  z-index: 1;
+  position: absolute;
+  position: fixed;
+  top: 15%;
+  right: 24%;
+  overflow: scroll;
+}
+.InfoPr:hover {
+  cursor: pointer;
+}
+.ics i {
+  float: left;
+  font-size: 120%;
+  cursor: pointer;
+}
+.NomeFollower {
+  display: inline-block;
+  margin-left: 1em;
+  margin-top: 1.5em;
+}
+.Lista {
+  padding-top: 4em; 
+  float: left;
+  font-family: Baskerville;
+  font-size: 120%;
+}
+.Lista input[type=submit] {
+  float: right;
+  margin-right: -25em;
+  margin-top: 1.5em;
+  display: inline-block;
+  cursor: pointer;
+}
+.eliminaBlog, .eliminaTema, .eliminaUtente {
+  float: left;
+  font-size: 120%;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+#registrati, #registratiPremium, #diventaPremiumRegistrazione {
+  margin-bottom: 2em;
+}
+footer { 
+  text-align: center;
+  margin-bottom: 0;
+  padding: 1em;
+  font-size: 120%;
+}
+hr {
+  border: 1px solid rgb(212, 72, 76);
+}
+@media all and (max-width: 700px){
+  .topnav {
+    width: 100%;
+  }
+  .topnav input[type=text] {
+    width: 20%;
+  }
+  .topnav a {
+    font-size: 90%;
+  }
+  #usercheck {
+    display: none;
+    background-color: white;
+    z-index: 1;
+    width: 30%;
+    height: 20%;
+    overflow: scroll;
+    position: fixed;
+    margin-right: -5em;
+    top: 5.5%;
+    text-align: center;
+    border: 2px solid rgb(212, 72, 76);  
+    font-family: Baskerville;
+  }
+  #welcome {
+    font-size: 3.5em;
+  }
+  .Posts {
+    padding-top: 1em;
+    border: 1px solid rgb(212, 72, 76);
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    min-height: 20em;
+    width: 30em;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .immaginiDeiPost{
+    max-height: 9em;
+    max-width: 8em;
+    float: right;
+    margin-right: 4em;
+    padding-right: 0;
+    margin-top: 5em;
+  }
+  .titoloPost{
+  font-family: Baskerville;
+  font-size: 2.5em;
+  margin-left: 1em;
+
+}
+.testoPost, .AutorePost{
+  font-family: Baskerville;
+  font-size: 1.5em;
+  margin-left: 3em;
+  width: 15em;
+
+}
+.Piace, .PiaceNON, .piaciuto, .NONpiaciuto {
+  margin-left: 4em;
+  cursor: pointer;
+  width: 3em;
+}
+.numeroLike{
+  margin-left: 5em;
+}
+.InserisciCommento{
+  font-family: Baskerville;
+  color: black;
+  margin-left: 4em;
+}
+.stampaCommenti{
+  margin-left: 4em;
+  font-family: Baskerville;
+  padding-bottom: 0.5em;
+  display: block;
+
+}
+.stampaCommentiTesto{
+  margin-left: 6em;
+  font-family: Baskerville;
+  width: 15em;
+  display: inline-block;
+
+
+}
+.eliminaCommento {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  display: inline-block;
+  cursor: pointer;
+}
+.eliminaPost {
+  margin-left: 10.7em;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+  .contenitoreBlogGrande{
+    display: block;
+    padding: 10px;
+  }
+  .contenitoreBlog{
+    border: 1px solid rgb(81, 122, 154);
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7em;
+  }
+  #bachecaP, #bacheca {
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Lista {
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Lista input[type=submit] {
+    float: left;
+    margin-right: 1em;
+  }
+  .Nascondi {
+    background-color: white;
+    color: black;
+    width: 20em;
+    height: 40em;
+    z-index: 1;
+    position: absolute;
+    position: fixed;
+    top: 15%;
+    right: 24%;
+    overflow: scroll;
+  }
+}
+@media all and (min-width: 701px) and (max-width: 999px){
+  .Posts {
+    width: 40em;
+  }
+  .topnav {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .topnav input[type=text] {
+    width: 20%;
+  }
+}
+@media all and (max-width: 1000px) {
+  #usercheck {
+    display: none;
+    background-color: white;
+    z-index: 1;
+    width: 30%;
+    height: 20%;
+    overflow: scroll;
+    position: fixed;
+    right: 15%;
+    top: 6.5%;
+    text-align: center;
+    border: 2px solid rgb(212, 72, 76);  
+    font-family: Baskerville;
+  }
+}
